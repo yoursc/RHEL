@@ -1,0 +1,26 @@
+# 本文讲的是在RHEL7系统中配置VNC服务
+
+# 检查系统中是否安装tigervnc-server
+rpm -qa |grep vnc
+
+# 安装
+yum install tigervnc-server
+
+# 编辑配置文件
+cd /lib/systemd/system
+cp vncserver@.service vncserver@:1.service
+vim vncserver@1.service
+# 把文件中的<USER>该成登陆VNC使用的用户名
+
+# 更新systemctl
+systemctl daemon-reload
+
+# 设置用户VNC密码
+vncpasswd <USER>
+
+#启动vnc服务
+vncserver:1
+
+###VNC客户端
+我用的是在这家网站下的
+www.realvnc.com
