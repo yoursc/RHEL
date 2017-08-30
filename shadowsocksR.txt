@@ -1,0 +1,16 @@
+# 本文讲的是在LINUX系统中配置SSR服务
+
+# 摘自逗逼社区 https://doub.io/
+# 等我有时间吸收一下，把这些脚本整理成自己的东西
+
+# ShadowsocksR 单/多端口 一键管理脚本
+wget -N --no-check-certificate https://softs.fun/Bash/ssr.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh
+chmod +x ssr.sh
+bash ssr.sh
+
+# ShadowsocksR MudbJSON模式多用户一键脚本 支持流量限制等
+wget -N --no-check-certificate https://softs.fun/Bash/ssrmu.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh
+chmod +x ssrmu.sh
+bash ssrmu.sh
